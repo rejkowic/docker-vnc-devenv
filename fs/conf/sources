@@ -1,0 +1,13 @@
+###### Ubuntu Main Repos
+deb http://de.archive.ubuntu.com/ubuntu/ artful main restricted universe multiverse 
+deb-src http://de.archive.ubuntu.com/ubuntu/ artful main restricted universe multiverse 
+
+###### Ubuntu Update Repos
+deb http://de.archive.ubuntu.com/ubuntu/ artful-security main restricted universe multiverse 
+deb http://de.archive.ubuntu.com/ubuntu/ artful-updates main restricted universe multiverse 
+deb http://de.archive.ubuntu.com/ubuntu/ artful-proposed main restricted universe multiverse 
+deb http://de.archive.ubuntu.com/ubuntu/ artful-backports main restricted universe multiverse 
+deb-src http://de.archive.ubuntu.com/ubuntu/ artful-security main restricted universe multiverse 
+deb-src http://de.archive.ubuntu.com/ubuntu/ artful-updates main restricted universe multiverse 
+deb-src http://de.archive.ubuntu.com/ubuntu/ artful-proposed main restricted universe multiverse 
+deb-src http://de.archive.ubuntu.com/ubuntu/ artful-backports main restricted universe multiverse
