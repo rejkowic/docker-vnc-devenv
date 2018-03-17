@@ -79,7 +79,7 @@ RUN curl -sSL https://dl.google.com/linux/linux_signing_key.pub | apt-key add - 
 
 ARG GO=1.9.3
 ARG GO_TAR=go${GO}.linux-amd64.tar.gz
-RUN wget https://dl.google.com/go/${GO_TAR} && tar -C /usr/local -xzf ${GO_TAR} && rm ${GO_TAR}
+RUN wget https://dl.google.com/go/${GO_TAR} && tar -C /usr/local -xzf ${GO_TAR} && rm ${GO_TAR} && cp /usr/local/go/bin/* /usr/local/bin
 
 RUN apt install -y ubuntu-make vim htop default-jre p7zip pkg-config git lsof inetutils-ping 
 
@@ -100,7 +100,7 @@ RUN apt install -y npm && npm install -g create-react-app
 
 RUN  wget -q https://app.hubstaff.com/download/linux && mv linux Hubstaff && chmod +x Hubstaff
 
-RUN apt install -y bashdb apache2-utils
+RUN apt install -y bashdb apache2-utils inotify-tools
 
 ARG USER=rejkowic
 ARG USER_PW=123
