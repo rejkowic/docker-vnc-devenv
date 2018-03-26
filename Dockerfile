@@ -100,7 +100,7 @@ RUN apt install -y npm && npm install -g create-react-app
 
 RUN  wget -q https://app.hubstaff.com/download/linux && mv linux Hubstaff && chmod +x Hubstaff
 
-RUN apt install -y bashdb apache2-utils inotify-tools rsync
+RUN apt install -y bashdb apache2-utils inotify-tools rsync python3-pip
 
 ARG USER=rejkowic
 ARG USER_PW=123
